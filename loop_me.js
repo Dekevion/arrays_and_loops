@@ -29,13 +29,8 @@ companies.forEach(function (each_company,index) {
 
 let canDrink = [];
 
-for (let i = 0; i < ages.length; i++) {
-    if(i < 21) {
-        canDrink.push(i);
-        console.log(canDrink)
-    }
-}
-
+const drink = ages.filter(age => age >= 21);
+console.log(drink);
 // const canDrink = ages.filter(function (age) {
 //     if(age >= 21){
 //         return true
